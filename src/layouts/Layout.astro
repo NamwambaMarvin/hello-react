@@ -1,0 +1,18 @@
+---
+import Navigation from './components/Navigation.astro';
+import Scripts from './components/scripts.astro';
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Purity Cleaning Services</title>
+  </head>
+  <body>
+    <Navigation />
+    <slot />
+    <h1>Purity</h1>
+  </body>
+  <Scripts />
+</html>
