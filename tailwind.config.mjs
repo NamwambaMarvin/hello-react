@@ -4,10 +4,12 @@ export default {
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
 		'./pages/**/*.{html,js,astro}',
 		'./components/**/*.{html,js,astro}',
+		'./node_modules/flowbite/**/*.js',
 	],
 	theme: {
 		extend: {},
 	},
 	plugins: [
+		require('flowbite/plugin'),
 	  ],
 }

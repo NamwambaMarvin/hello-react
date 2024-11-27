@@ -1,8 +1,13 @@
 ---
+//production settings
 import Navigation from '/opt/buildhome/repo/components/Navigation.astro';
 import Scripts from '/opt/buildhome/repo/components/scripts.astro';
+import Carousel from '/opt/buildhome/repo/components/Carousel.astro';
+//development settings
+//import Navigation from './components/Navigation.astro';
+//import Scripts from './components/scripts.astro';
+//import Carousel from './components/Carousel.astro';
 ---
-
 
 <html lang="en">
   <head>
@@ -13,8 +18,8 @@ import Scripts from '/opt/buildhome/repo/components/scripts.astro';
   </head>
   <body>
     <Navigation />
+    <Carousel />
     <slot />
-    <h1>Purity</h1>
   </body>
   <Scripts />
 </html>
